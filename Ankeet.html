@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niko Kunstikool, ankeet</title>
+    <meta http-equiv="kirjeldus" content="Õpilase andmed, NikoKunstikooli kontaktid ja ankeet">
+    <meta http-equiv="omanik" content="Niko Sillaste">
+    <meta http-equiv="expires" content="04.03.2025">
+    <style type="text/css">
+        .important {
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+    <img src="Logo.png" width="270" height="100">
+       <fieldset>
+           <legend> Õpilase andmed:</legend>
+           <label>Nimi: <input type="text" name="nimi" size="20" maxlength="45"</label><br />
+           <label>Perekonnanimi: <input type="text" name="perekonnanimi" size="20" maxlength="45"</label><br />
+           <label>Vanus: <input type="text" name="vanus" size="1" maxlength="3"</label><br />
+           <label>Teie Email: <input type="text" name="email" size="30" maxlength="70"</label><br />
+       </fieldset> <br />
+       <fieldset>
+        <legend> Niko Kunstikool kontaktid:</legend>
+        <div>
+            <p class="important"><span class="contact">Telefoninumber: </span>372 8304 6759</p>
+            <p class="important"><span class="contact">Meie Email: </span> <a href="nikoemail">NikoKunstikool@gmail.com</a></p>
+            <p class="important">Me oleme avatud iga päev:</p>
+            <p class="important">Aadress: Kevade 4, Tallinn</p>
+            <p class="important">Esmaspäevast-reedeni: 10:00-20:00</p>
+            <p class="important">Läupäevast-pühapäevani: 10:00-17:30</p>
+            <p class="important">Lisateavet leiate meie ressurssidest:</p>
+            <li><span class="meie resurssid"></span><a href="veebileht">Meie veebileht</a></li>
+            <li><span class="meie resurssid"><a href="NikoKunstikool@gmail.com">Meie grupp Facebookis</a></li><br />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2028.9360447957665!2d24.729363517443844!3d59.434141200000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692948336335601%3A0xe987888cc7fd86e5!2z0KLQsNC70LvQuNC90YHQutCw0Y8g0KXRg9C00L7QttC10YHRgtCy0LXQvdC90LDRjyDQqNC60L7Qu9Cw!5e0!3m2!1sru!2see!4v1677938808921!5m2!1sru!2see" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </fieldset> <br />
+        <fieldset>
+        <legend> Ankeet:</legend>
+        <p>
+            <label for="comments">Miks te valisite meie kunstikool? </label><br />
+            <textarea rows="5" cols="40" id="comments"></textarea>
+        </p>
+        <p>
+            <label for="hear-about">Kuidas te meie koolist teada said?</label>
+            <select name="referrer" id="hear-about">
+                <option value="nägin"> Nägin reklaamis</option>
+                <option value="soovitas"> Keegi soovitas</option>
+                <option value="leidsin"> Leidsin ise välja</option>
+            </select>
+        </p>
+        <p>
+            <label for="hear-about">Mitu päeva nädalas soovite kunstikoolis käia?</label>
+            <select name="referrer" id="hear-about">
+                <option value="üks kord"> Üks kord</option>
+                <option value="kaks korda"> Kaks korda</option>
+                <option value="kolm korda"> Kolm korda</option>
+                <option value="neli korda"> Neli korda</option>
+            </select>
+        </p>
+        <p>
+            <label for="hear-about">Millised on teie kogemused joonistamise alal?</label>
+            <select name="referrer" id="hear-about">
+                <option value="uustulnuk"> Ma olen uustulnuk</option>
+                <option value="natuke kogemusi"> Mul on natuke kogemusi</option>
+                <option value="suur kogemus"> Mul on suur kogemus</option>
+            </select>
+        </p>
+        <p>
+            <label for="hear-about">Mis keelt te räägite?</label>
+            <select name="referrer" id="hear-about">
+                <option value="eesti">Eesti keeles</option>
+                <option value="vene"> Vene keeles</option>
+                <option value="inglise"> Inglise keeles</option>
+                <option value="eesti ja vene"> Eesti ja vene keelt</option>
+                <option value="eesti ja inglise"> Eesti ja inglise keelt</option>
+                <option value="inglise ja eesti"> Inglise ja eesti keelt</option>
+                <option value="inglise ja vene"> Inglise ja vene keelt</option>
+                <option value="vene ja inglise"> Vene ja inglise keelt</option>
+                <option value="tean 3"> Räägin kõiki kolme keelt</option>
+            </select>
+        </p>
+        <p>
+            <label for="hear-about">Kui kaua te soovite õppida?</label>
+            <select name="referrer" id="hear-about">
+                <option value="30"> 30 minutid</option>
+                <option value="45"> 45 minutid</option>
+                <option value="60"> 1 tund</option>
+            </select>
+        </p>
+        <p>Millega teile meeldib joonistada?
+            <br />
+            <input type="checkbox" name="service" value="pliats"/> Pliatsiga
+            <input type="checkbox" name="service" value="vildpliats" /> Vildipliiastiga
+            <input type="checkbox" name="service" value="õli" /> Õliga
+            <input type="checkbox" name="service" value="akvarell" /> Akvarelliga
+            <input type="checkbox" name="service" value="pastell" /> Pastelliga
+        </p>
+        <p>
+            Te tahate joonistada:<br />
+            <label><input type="radio" name="rating" value="käsitsi" /> Käsitsi</label>
+            <label><input type="radio" name="rating" value="programmis" /> Programmis</label>
+        </p>
+        <p>
+            Kas te proovisite joonistada tarkvaras (näiteks: Photoshop, Adobe Illustrator ja muud)<br />
+            <label><input type="radio" name="rating" value="yah" /> Jah</label>
+            <label><input type="radio" name="rating" value="ei" /> Ei</label>
+        </p>
+        <p>
+            Kas me võime kasutada teie joonistusi oma sotsiaalvõrgustikus näitamiseks?<br />
+            <label><input type="radio" name="rating" value="jah" /> Jah</label>
+            <label><input type="radio" name="rating" value="ei" /> Ei</label>
+            <label><input type="radio" name="rating" value="50/50" /> Ainult minu nõusolekul</label>
+        </p>
+        <p>
+            <label for="comments">Kui teil on ilmunud mingit küsimused, siis kirjuta neid siin: </label><br />
+            <textarea rows="8" cols="50" id="comments"></textarea>
+        </p>
+        <label><input type="checkbox" name="subscribe">Soovin saada uudiseid kooli kohta</label>
+        <a href="Lõpp.html"><input type="submit" value="Esitada ankeet"/></a>
+        </fieldset>
+        <p>&copy; 2023 Niko Kunstikool</p>
+    </form>
+</body>
+</html>
